@@ -1,0 +1,338 @@
+/***************************************************************************************
+  FONTES
+****************************************************************************************/
+@font-face {
+    font-family: 'Museo300-Regular-webfont';
+	src:url(../fonts/Museo300-Regular-webfont.eot);
+	src:url(../fonts/Museo300-Regular-webfont.ttf) format('truetype'),
+	url(../fonts/Museo300-Regular-webfont.woff) format('woff'),
+	url(../fonts/museosans-300-webfont.svg) format('svg');
+    font-weight: bold;
+	font-style:normal;
+}
+@font-face {
+    font-family: 'Museo500-Regular-webfont';
+	src:url(../fonts/Museo500-Regular-webfont.eot);
+	src:url(../fonts/Museo500-Regular-webfont.ttf) format('truetype'),
+	url(../fonts/Museo500-Regular-webfont.woff) format('woff'),
+	url(../fonts/museosans-500-webfont.svg) format('svg');
+    font-weight: bold;
+	font-style:normal;
+
+}
+@font-face {
+    font-family: 'Museo700';
+	src:url(../fonts/Museo700-Regular-webfont.eot);
+	src:url(../fonts/Museo700-Regular-webfont.ttf) format('truetype'),
+	url(../fonts/Museo700-Regular-webfont.woff) format('woff');
+    font-weight: bold;
+	font-style:normal;
+
+}
+@font-face {
+    font-family: 'museo900';
+    src: url('../fonts/museo900-regular-webfont.eot');
+    src: url('../fonts/museo900-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museo900-regular-webfont.woff2') format('woff2'),
+         url('../fonts/museo900-regular-webfont.woff') format('woff'),
+         url('../fonts/museo900-regular-webfont.ttf') format('truetype'),
+         url('../fonts/museo900-regular-webfont.svg#museo900') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ------- GERAL ------- */
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	border: none;
+	line-height: normal;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Museo300', sans-serif;
+}
+
+/* ------- FONTS ------- */
+$Museo300: 'Museo300-Regular-webfont';
+$Museo500: 'Museo500-Regular-webfont';
+$Museo700: 'Museo700';
+$Museo900: 'museo900';
+
+/* ------- COLORS ------- */
+$Branco: white;
+$Preto: black;
+$Verde: #495e38;
+$Rosa: #db5c87;
+
+/* ------- FUNCTIONS ------- */
+%fontextralight {
+  font-weight:200; 
+}
+%fontmedium {
+  font-weight:400; 
+}
+%fontnormal {
+  font-weight:300; 
+}
+
+@mixin boxshad{
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(211,211,211,1);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(211,211,211,1);
+	box-shadow: 0px 2px 5px 0px rgba(211,211,211,1);
+}
+
+@mixin model($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin percento {
+	width: 100%;
+}
+
+/* ------- CLASSES ------- */
+.clear {
+	position: relative;
+	clear: both;
+	width: 100%;
+	height: 0px;
+}
+.center{
+  margin: 0 auto;float: none;text-align: center;}  
+/***************************************************************************************
+  BASE
+  ****************************************************************************************/
+body {
+ width: 100%;
+ margin-top:-2px;
+ background: $Preto;
+}
+
+img{max-width: 100%; height: auto;}
+
+.imgcenter{display: block;margin: 0px auto;}
+
+.aligncenter{text-align: center;}
+
+h1, h2, h3, p, a{font-family: $Museo300; line-height: 24px; }
+
+h1, h2, h3{font-weight: bold;}
+
+::-webkit-input-placeholder {
+  font-family: $Museo300 !important;
+}
+
+:-moz-placeholder {
+  font-family: $Museo300 !important;
+}
+
+::-moz-placeholder {
+ font-family: $Museo300 !important;
+}
+
+:-ms-input-placeholder {  
+  font-family: $Museo300 !important;
+}
+
+a{&:hover{text-decoration:none !important;}}
+
+:focus {outline:none !important;}
+
+.bgParallax1 {margin: 0 auto; width: 100%; max-width: 1920px; position: relative; min-height: 100%; background-position: 50% 0; background-repeat: repeat; background-attachment: fixed; }
+
+.no-padding{padding: 0;}
+
+.f_overlay {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    h2{color:$Branco;font-size: 50px; margin-top: 80px;}
+    p{color:$Branco;font-size: 20px;}
+}
+
+.row-centered {
+  text-align:center;
+}
+.col-centered {
+  display:inline-block;
+  float:none;
+  text-align:left;
+}
+/***************************************************************************************
+  BUTTONS
+  ****************************************************************************************/
+.btn-rosa{
+	background: $Rosa;
+    border: none;
+    font-size: 20px;
+    font-family: $Museo500;
+    color: $Branco;
+    
+    &:hover{background: $Rosa; }
+	&:focus{background: $Rosa; }
+	&:active{background: $Rosa; }
+}
+/***************************************************************************************
+  HEADER
+  ****************************************************************************************/
+header{
+	background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: background .6s ease-in-out;
+    z-index: 3;
+}
+  
+/***************************************************************************************
+  MENU
+****************************************************************************************/
+.navbar-toggle{background: #495e38 !important; border: #495e38 !important;position: relative;}
+.icon-bar{background:$Branco !important;}
+.menu-top{
+	background: transparent;
+	.logo{padding:10px;}
+	.navbar-default{background: transparent !important; border: transparent !important; margin:0px !important;padding: 10px 0px 10px 0px;}
+	a{
+		color:$Branco !important; font-family: $Museo700 !important; font-size: 17px;text-align: center;
+		-webkit-transition: 0.5s;
+	    -moz-transition: 0.5s;
+	    -o-transition: 0.5s;
+	    transition: 0.5s;
+		&:hover{color:$Rosa !important;}
+	}
+	.navbar-nav{
+		position: relative;
+		li{  
+			
+		}
+	}
+	.logo-menu{padding: 10px;}
+}
+
+/***************************************************************************************
+  BANNER
+****************************************************************************************/
+.banner{
+	background: url(../img/banner.jpg) no-repeat;
+    background-color: black;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    height: 800px;
+    background-size:cover;
+    webkit-clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 80%);
+    clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 80%);
+    .logo{
+		width: 206px;
+		height: 198px;
+		margin-bottom: 40px;
+    }
+    a{margin-top: 40px;}
+    .text-intro{
+    	margin-top: 100px;
+    	text-align: center;
+    	h2{
+    		color:$Branco;
+    		font-family: Museo900;
+    		text-shadow: 2px 2px $Preto;
+    		font-size: 65px;
+    	}
+    	h3{
+    		color:$Branco;
+    		text-shadow: 2px 2px $Preto;
+    	}
+    }
+    .counter {
+		text-align: center;
+		padding-right: 20px;
+		.counter-item {
+			display: inline-block;
+			background: rgba(219,92,135,0.7);
+			padding: 10px;
+    		border-radius: 10px;
+			.counter-label {
+				font-size: 13px;
+				font-weight: bold;
+				text-transform: uppercase;
+				color:white;
+				font-family: $Museo700;
+			}
+			.counter-number {
+					color: white;
+					display: block;
+					position: relative;
+					margin: 0 auto;
+					font-size: 36px;
+					font-weight: bold;
+					text-align: center;
+					line-height: 70px;
+					font-family: $Museo700;
+					&:after{
+						content: '';
+						color: white;
+						position: absolute;
+						right: -18px;
+					}
+				}
+				&:last-child{
+					.counter-label {
+						margin-right: 0;
+					}
+					.counter-number {
+						margin-right: 0;
+						&:after{
+							content: '';
+						}
+					}
+				}
+		}
+	}
+    
+}
+
+/***************************************************************************************
+  SOBRE
+  ****************************************************************************************/
+.sobre{
+	padding: 85px;
+	h2{color:$Rosa;font-family: $Museo700;}
+	p{color:$Branco;font-size: 17px;}
+	a{color: $Rosa;}
+}
+/***************************************************************************************
+  ATIVIDADE
+  ****************************************************************************************/
+.atividades{
+	background: $Branco;
+	.imagematividade{
+		background-image: none;
+	    height: 470px;
+	    z-index: 0;
+	    background-attachment: scroll;
+	    background-size: auto;
+	    background-size:cover;
+	}
+	.descricaoatividade{
+		padding: 85px;
+		h2{color:$Rosa;font-family: $Museo700;}
+		p{color:$Preto;font-size: 17px;}
+	}
+}
+/***************************************************************************************
+  INSIGNIAS
+  ****************************************************************************************/
+.insignias{
+	background: url(../img/banner.jpg) no-repeat;
+    background-color: black;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    height: 400px;
+    background-size:cover;
+    h2{color:$Branco;font-family: $Museo700;}
+    p{color:$Branco;font-size: 17px;}
+}
