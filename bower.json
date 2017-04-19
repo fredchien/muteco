@@ -1,0 +1,23 @@
+{
+  "name": "muteco",
+  "description": "26º MUTECO",
+  "main": "index.html",
+  "authors": [
+    "Frederic Chien <fred_chien@yahoo.com.br>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/fredchien/muteco",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "normalize-css": "^5.0.0",
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.3"
+  }
+}
