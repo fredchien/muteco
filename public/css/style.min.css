@@ -21,7 +21,7 @@
 .center { margin: 0 auto; float: none; text-align: center; }
 
 /*************************************************************************************** BASE */
-body { width: 100%; margin-top: -2px; background: black; }
+body { width: 100%; margin-top: -2px; background: #222222; }
 
 img { max-width: 100%; height: auto; }
 
@@ -60,13 +60,13 @@ a:hover { text-decoration: none !important; }
 .col-centered { display: inline-block; float: none; text-align: left; }
 
 /*************************************************************************************** BUTTONS */
-.btn-rosa { background: #db5c87; border: none; font-size: 20px; font-family: "Museo500-Regular-webfont"; color: white; }
+.btn-rosa { background: #db5c87; border: none; font-size: 20px; font-family: "Museo500-Regular-webfont"; color: white; -webkit-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; }
 
-.btn-rosa:hover { background: #db5c87; }
+.btn-rosa:hover { background: #c92e62; color: white; }
 
-.btn-rosa:focus { background: #db5c87; }
+.btn-rosa:focus { background: #c92e62; color: white; }
 
-.btn-rosa:active { background: #db5c87; }
+.btn-rosa:active { background: #c92e62; color: white; }
 
 /*************************************************************************************** HEADER */
 header { background: transparent; position: absolute; top: 0; left: 0; right: 0; transition: background .6s ease-in-out; z-index: 3; }
@@ -74,7 +74,7 @@ header { background: transparent; position: absolute; top: 0; left: 0; right: 0;
 /***************************************************************************************
   MENU
 ****************************************************************************************/
-.navbar-toggle { background: #495e38 !important; border: #495e38 !important; position: relative; }
+.navbar-toggle { background: #db5c87 !important; border: #db5c87 !important; position: relative; }
 
 .icon-bar { background: white !important; }
 
@@ -91,6 +91,10 @@ header { background: transparent; position: absolute; top: 0; left: 0; right: 0;
 .menu-top .navbar-nav { position: relative; }
 
 .menu-top .logo-menu { padding: 10px; }
+
+.m_menu { width: 100%; display: block; position: fixed; top: -300px; z-index: 999; transition-duration: 1s; background: white; }
+
+.m_menu a { color: #db5c87 !important; }
 
 /***************************************************************************************
   BANNER
@@ -132,22 +136,69 @@ header { background: transparent; position: absolute; top: 0; left: 0; right: 0;
 
 .sobre a { color: #db5c87; }
 
+.sobre a:hover { text-shadow: 2px 2px #000; }
+
 /*************************************************************************************** ATIVIDADE */
 .atividades { background: white; }
 
 .atividades .imagematividade { background-image: none; height: 470px; z-index: 0; background-attachment: scroll; background-size: auto; background-size: cover; }
 
-.atividades .descricaoatividade { padding: 85px; }
+.atividades .descricaoatividade { padding: 85px; height: 470px; }
 
 .atividades .descricaoatividade h2 { color: #db5c87; font-family: "Museo700"; }
 
 .atividades .descricaoatividade p { color: black; font-size: 17px; }
 
-/*************************************************************************************** INSIGNIAS */
-.insignias { background: url(../img/banner.jpg) no-repeat; background-color: black; position: relative; width: 100%; z-index: 0; height: 400px; background-size: cover; }
+.atividades .box-atividade:nth-child(even) .imgdest { float: right; }
 
-.insignias h2 { color: white; font-family: "Museo700"; }
+.atividades .box-atividade:nth-child(even) .descricaoatividade { background: #222222; }
 
-.insignias p { color: white; font-size: 17px; }
+.atividades .box-atividade:nth-child(even) .descricaoatividade p { color: white; }
+
+/*************************************************************************************** DOWNLOADS */
+.downloads { position: relative; background: white; width: 100%; z-index: 0; background-size: cover; padding: 85px; }
+
+.downloads h2 { color: #db5c87; font-family: "Museo700"; }
+
+.downloads p { color: black; font-size: 17px; }
+
+.downloads .boxdownload { text-align: center; }
+
+.downloads .boxdownload figcaption { line-height: 24px; font-size: 17px; font-family: "Museo500-Regular-webfont"; margin-bottom: 15px; }
+
+/*************************************************************************************** SUGESTAO */
+.sugestao { background: url(../img/sugestao.jpg) no-repeat; background-color: black; position: relative; width: 100%; z-index: 0; background-size: cover; padding: 85px; }
+
+.sugestao h2 { color: #db5c87; font-family: "Museo700"; }
+
+.sugestao p { color: white; font-size: 17px; }
+
+.sugestao a { color: #db5c87; }
+
+.sugestao a:hover { text-shadow: 2px 2px #000; }
+
+/***************************************************************************************
+  FOOTER
+****************************************************************************************/
+footer { padding: 85px; }
+
+footer h2 { color: #db5c87; font-family: "Museo700"; }
+
+footer h3 { color: white; font-family: "Museo700"; }
+
+footer p { color: white; font-size: 17px; }
+
+footer a { color: #db5c87; }
+
+footer a:hover { text-shadow: 2px 2px #000; }
+
+/***************************************************************************************
+  MOBILE
+****************************************************************************************/
+@media only screen and (max-width: 500px) { .banner .text-intro h2 { font-size: 40px; }
+  .sobre, .sugestao, footer { padding: 0px; }
+  .atividades .descricaoatividade { padding: 15px; }
+  .atividades .imagematividade { background-size: cover !important; }
+  .atividades .box-atividade:nth-child(even) .imgdest { float: none; } }
 
 /*# sourceMappingURL=style.min.css.map */

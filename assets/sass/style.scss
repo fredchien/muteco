@@ -106,7 +106,7 @@ $Rosa: #db5c87;
 body {
  width: 100%;
  margin-top:-2px;
- background: $Preto;
+ background: rgb(34, 34, 34);
 }
 
 img{max-width: 100%; height: auto;}
@@ -169,10 +169,14 @@ a{&:hover{text-decoration:none !important;}}
     font-size: 20px;
     font-family: $Museo500;
     color: $Branco;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
     
-    &:hover{background: $Rosa; }
-	&:focus{background: $Rosa; }
-	&:active{background: $Rosa; }
+    &:hover{background: #c92e62; color: $Branco;}
+	&:focus{background: #c92e62; color: $Branco;}
+	&:active{background: #c92e62; color: $Branco;}
 }
 /***************************************************************************************
   HEADER
@@ -190,7 +194,7 @@ header{
 /***************************************************************************************
   MENU
 ****************************************************************************************/
-.navbar-toggle{background: #495e38 !important; border: #495e38 !important;position: relative;}
+.navbar-toggle{background: $Rosa !important; border: $Rosa !important;position: relative;}
 .icon-bar{background:$Branco !important;}
 .menu-top{
 	background: transparent;
@@ -211,6 +215,11 @@ header{
 		}
 	}
 	.logo-menu{padding: 10px;}
+}
+.m_menu{
+	width: 100%; display: block; position: fixed;top: -300px;  z-index: 999;  transition-duration: 1s;
+	background: $Branco;
+	a{color: $Rosa !important;}
 }
 
 /***************************************************************************************
@@ -301,7 +310,7 @@ header{
 	padding: 85px;
 	h2{color:$Rosa;font-family: $Museo700;}
 	p{color:$Branco;font-size: 17px;}
-	a{color: $Rosa;}
+	a{color: $Rosa; &:hover{text-shadow: 2px 2px #000;}}
 }
 /***************************************************************************************
   ATIVIDADE
@@ -318,21 +327,76 @@ header{
 	}
 	.descricaoatividade{
 		padding: 85px;
+		height: 470px;
 		h2{color:$Rosa;font-family: $Museo700;}
 		p{color:$Preto;font-size: 17px;}
 	}
+	.box-atividade{
+		&:nth-child(even){
+			.imgdest{
+				float: right;
+			}
+			.descricaoatividade{
+				background: rgb(34, 34, 34);
+				p{color: $Branco;}
+			}
+		}
+	}
 }
 /***************************************************************************************
-  INSIGNIAS
+  DOWNLOADS
   ****************************************************************************************/
-.insignias{
-	background: url(../img/banner.jpg) no-repeat;
+.downloads{	
+    position: relative;
+    background: $Branco;
+    width: 100%;
+    z-index: 0;
+    background-size:cover;
+    padding: 85px;
+    h2{color:$Rosa;font-family: $Museo700;}
+    p{color:$Preto;font-size: 17px;}
+    .boxdownload{
+    	text-align: center;
+    	figcaption{
+			line-height: 24px;
+    		font-size: 17px;
+    		font-family: $Museo500;
+    		margin-bottom:15px; 
+    	}
+    }
+}
+/***************************************************************************************
+  SUGESTAO
+  ****************************************************************************************/
+.sugestao{
+	background: url(../img/sugestao.jpg) no-repeat;
     background-color: black;
     position: relative;
     width: 100%;
     z-index: 0;
-    height: 400px;
     background-size:cover;
-    h2{color:$Branco;font-family: $Museo700;}
+    padding: 85px;
+    h2{color:$Rosa;font-family: $Museo700;}
     p{color:$Branco;font-size: 17px;}
+    a{color: $Rosa; &:hover{text-shadow: 2px 2px #000;}}
+}
+/***************************************************************************************
+  FOOTER
+****************************************************************************************/
+footer{
+	padding: 85px;
+	h2{color:$Rosa;font-family: $Museo700;}
+	h3{color:$Branco;font-family: $Museo700;}
+    p{color:$Branco;font-size: 17px;}
+    a{color: $Rosa; &:hover{text-shadow: 2px 2px #000;}}
+}
+/***************************************************************************************
+  MOBILE
+****************************************************************************************/
+@media only screen and (max-width: 500px) { 
+	.banner .text-intro h2{font-size: 40px;}
+	.sobre, .sugestao, footer{padding: 0px;}
+	.atividades .descricaoatividade{padding: 15px;}
+	.atividades .imagematividade{background-size:cover !important;}
+	.atividades .box-atividade:nth-child(even) .imgdest{float: none;}
 }

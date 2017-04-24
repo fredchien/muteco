@@ -22,17 +22,12 @@
 }());
 
 $(document).ready(function() {
-	
 	$('.bgParallax1').each(function(){
 		var $obj = $(this);
-		 
 		$(window).scroll(function() {
 			var yPos = -($(window).scrollTop() / $obj.data('speed')); 
-	 
 			var bgpos = '50% '+ yPos + 'px';
-	 
 			$obj.css('background-position', bgpos );
-	 
 		}); 
 	});
 	
@@ -50,3 +45,31 @@ $(document).ready(function() {
 	    });
     });
 });
+
+$('a[href^="#"]').bind("click.smoothscroll", function(n) {
+    n.preventDefault();
+    var i = $(window).scrollTop(),
+    r = this.hash,
+    t = $(r);
+    i < 100 ? $("html, body").animate({
+        scrollTop: t.offset().top -45 
+    }, 1e3) : $("html, body").animate({
+        scrollTop: t.offset().top - 60  
+    }, 1e3)
+});
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 200) {
+        $(".m_menu").css('top', '0').fadeIn( "slow" );
+    } else {
+        $(".m_menu").css('top', '-300px').fadeIn( "slow" );
+    }
+
+});
+
+$comprimento = $(window).width();
+
+if ($comprimento <= 500) {
+    $('.banner').removeClass('bgParallax1');
+    $('.imagematividade').removeClass('bgParallax1');
+    $('.sugestao').removeClass('bgParallax1');
+}

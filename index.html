@@ -35,7 +35,7 @@
 
 <body>
 <header>
-	<div class="container">
+	<div class="container hidden-xs hidden-sm">
 		<div class="menu-top">
     		<div class="row">
     			<div class="col-lg-12">
@@ -52,14 +52,11 @@
 					    </div>
  						<div class="collapse navbar-collapse" id="menu-top">
  							<ul class="nav navbar-nav navbar-right">
-								<li><a href="/">Home</a></li>
-								<li><a href="/">Sobre</a></li>
-								<li><a href="/">Atividades</a></li>
-								<li><a href="/">Roteiro</a></li>
-								<li><a href="/">Insígnia</a></li>
-								<li><a href="/">Downloads</a></li>
-								<li><a href="/">Equipe</a></li>
-								<li><a href="/">Contato</a></li>
+								<li><a href="#">Home</a></li>
+								<li><a href="#sobre">Sobre</a></li>
+								<li><a href="#atividades">Atividades</a></li>
+								<li><a href="#downloads">Downloads</a></li>
+								<li><a href="#contato">Contato</a></li>
 							</ul>
 						</div>	
 					</nav>
@@ -67,9 +64,40 @@
     		</div>
 		</div>
 	</div>
+	<div class="m_menu">
+    		<div class="menu-top">
+	    		<div class="container">
+	    			<div class="row">
+		    			<div class="col-lg-12">
+		     				<nav class="navbar navbar-default">
+		 						<!-- Brand and toggle get grouped for better mobile display -->
+							    <div class="navbar-header">
+							      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-top-mobile">
+							        <span class="sr-only">Toggle navigation</span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+							      </button>
+							      <img src="public/img/logo-ueb.png">
+							    </div>
+		 						<div class="collapse navbar-collapse" id="menu-top-mobile">
+		 							<ul class="nav navbar-nav navbar-right">
+										<li><a href="#home">Home</a></li>
+										<li><a href="#sobre">Sobre</a></li>
+										<li><a href="#atividades">Atividades</a></li>
+										<li><a href="#downloads">Downloads</a></li>
+										<li><a href="#contato">Contato</a></li>
+									</ul>
+								</div>	
+							</nav>
+	     				</div>
+     				</div>
+	    		</div>
+    		</div>
+    	</div>
 </header>
 
-<section class="banner no-padding bgParallax1" data-speed="3" >
+<section class="banner no-padding bgParallax1" data-speed="3" id="home">
 	<div class="container">
 		<div class="row row-centered">
 			<div class="col-lg-12 col-centered">
@@ -101,14 +129,14 @@
                     </div>           
                  </div>
                  <div class="aligncenter">
-                 	<a href="" class="btn btn-primary btn-rosa">Saiba mais</a>
+                 	<a href="#sobre" class="btn btn-rosa">Saiba mais</a>
                  </div>
 			</div>
 		</div>	
 	</div>	
 </section>
 
-<section class="sobre">
+<section class="sobre" id="sobre">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -117,7 +145,7 @@
 
 				<p>Mas, afinal, o que é sustentabilidade? Estamos acostumados a pensar em sustentabilidade apenas do ponto de vista ambiental, ou seja, das relações que temos com o meio que nos circunda e nos dá sustentação biológica de subsistência. Mas não é possível termos um meio ambiente equilibrado se os próprios seres humanos não estão equilibrados em suas relações. Um ecossistema de baixa biodiversidade favorece o surgimento de espécies dominantes que tendem a destruir ou escravizar as demais, como formigas e cupins num pasto, por exemplo. Agora compare essa situação com lugares onde não há emprego, saúde e nem mesmo água ou comida para todos. A tendência é instabilidade social e conflitos. Isto é uma realidade em vários países do 3 o Mundo, provocando vários problemas geopolíticos, tais como o deslocamento de refugiados, que podem gerar conflitos em larga escala.</p>
 
-				<p>Então, trabalhar para que todos tenham condições dignas de sobrevivência e por um desenvolvimento econômico sustentável é trabalhar pela paz e, consequentemente, pela sustentabilidade da humanidade como espécie. Por isso a ONU tem trabalhado em várias frentes sociais como o combate à fome, a igualdade de gênero e a educação, como nos 17 objetivos de desenvolvimento sustentável. Por isso convidamos você, seu Grupo Escoteiro e sua Seção a participar da nossa maior ação conjunta pelo meio ambiente: o XXVI Mutirão Nacional Escoteiro de Ação Ecológica. No dia 3 de junho de 2017 milhares de jovens adultos, de todo o país, estarão trabalhando por um mundo melhor e pela sobrevivência do nosso planeta, desenvolvendo atividades sugeridas pela <a href="www.redeambientalescoteira.org.br" target="_blank">Rede Ambiental Escoteira</a></p>
+				<p>Então, trabalhar para que todos tenham condições dignas de sobrevivência e por um desenvolvimento econômico sustentável é trabalhar pela paz e, consequentemente, pela sustentabilidade da humanidade como espécie. Por isso a ONU tem trabalhado em várias frentes sociais como o combate à fome, a igualdade de gênero e a educação, como nos 17 objetivos de desenvolvimento sustentável. Por isso convidamos você, seu Grupo Escoteiro e sua Seção a participar da nossa maior ação conjunta pelo meio ambiente: o XXVI Mutirão Nacional Escoteiro de Ação Ecológica. No dia 3 de junho de 2017 milhares de jovens adultos, de todo o país, estarão trabalhando por um mundo melhor e pela sobrevivência do nosso planeta, desenvolvendo atividades sugeridas pela <a href="http://www.redeambientalescoteira.org.br" target="_blank">Rede Ambiental Escoteira</a></p>
 				<p>Junte-se a nós! Escoteiros do Brasil</p>
 				<p><a href="http://www.escoteiros.org.br/o-movimento-escoteiro/" target="_blank">Sobre o Movimento Escoteiro</a></p>
 			</div>
@@ -125,70 +153,186 @@
 	</div>
 </section>
 
-<section class="atividades">
+<section class="atividades" id="atividades">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="atividade">
-				<div class="col-lg-6 no-padding">
-					<div class="imagematividade bgParallax1" data-speed="9" style="background: url(public/img/atividade.jpg) no-repeat;">
-					
+				<div class="box-atividade">
+					<div class="col-lg-6 imgdest no-padding">
+						<div class="imagematividade bgParallax1" data-speed="12" style="background: url(public/img/at1.jpg) no-repeat;">
+						</div>
 					</div>
-				</div>
-				
-				<div class="descricaoatividade col-lg-6">
-					<h2>Titulo</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla sequi ex deleniti eaque sed vero recusandae sapiente nobis, magni unde illum adipisci iure, a, error! Quaerat porro, nulla cupiditate aperiam?</p>
-				</div>
-				<div class="clear"></div>
-				<div class="descricaoatividade col-lg-6">
-					<h2>Titulo</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla sequi ex deleniti eaque sed vero recusandae sapiente nobis, magni unde illum adipisci iure, a, error! Quaerat porro, nulla cupiditate aperiam?</p>
-				</div>
-					<div class="col-lg-6 no-padding">
-					<div class="imagematividade bgParallax1" data-speed="9" style="background: url(public/img/atividade1.jpg) no-repeat;">
-					
+					<div class="descricaoatividade col-lg-6">
+						<h2>Cozinha Sustentável</h2>
+						<p>No Brasil, anualmente, são desperdiçadas 41 mil toneladas de alimentos, segundo a World Resources Institute (WRI) Brasil. Isso coloca o Brasil entre os dez países que mais desperdiçam alimentos no mundo. Além de causar impactos ambientais, o desperdício de alimentos também causa consequências econômicas. Por isso confira algumas dicas para minimizar o desperdício.</p>
+						<a href="#" class="btn btn-rosa">Saiba mais</a>
 					</div>
+					<div class="clear"></div>
 				</div>
-				
-				<div class="clear"></div>
-				<div class="col-lg-6 no-padding">
-					<div class="imagematividade bgParallax1" data-speed="9" style="background: url(public/img/atividade3.jpg) no-repeat;">
-					
+				<div class="box-atividade">
+					<div class="col-lg-6 imgdest no-padding">
+						<div class="imagematividade bgParallax1" data-speed="12" style="background: url(public/img/atividade1.jpg) no-repeat;">
+						</div>
 					</div>
+					<div class="descricaoatividade col-lg-6">
+						<h2>Jaula do Homo Sapiens</h2>
+						<p>Você já tentou enxergar a nossa espécie como uma espécie animal? Imagine chegar no Jardim Zoológico e dar de cara com uma jaula onde dois “espécimes” humanos, um homem e uma mulher, encontram-se trancados? Imagine a mudança na forma de pensar que isso provocaria nos jovens. Por isso, sugerimos criar uma “jaula humana”.</p>
+						<a href="#" class="btn btn-rosa">Saiba mais</a>
+					</div>
+					<div class="clear"></div>
 				</div>
-				
-				<div class="descricaoatividade col-lg-6">
-					<h2>Titulo</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla sequi ex deleniti eaque sed vero recusandae sapiente nobis, magni unde illum adipisci iure, a, error! Quaerat porro, nulla cupiditate aperiam?</p>
+				<div class="box-atividade">	
+					<div class="col-lg-6 imgdest no-padding">
+						<div class="imagematividade bgParallax1" data-speed="12" style="background: url(public/img/aca.jpg) no-repeat;">
+						
+						</div>
+					</div>
+					<div class="descricaoatividade col-lg-6">
+						<h2>Acampamento Modelo</h2>
+						<p>De nada adianta nós escoteiros fazermos belas atividades de educação ambiental enquanto ainda contribuímos para degradar o meio ambiente nos locais onde acampamos. Por isso, que tal fazer um acampamento-modelo? Você pode realizá-lo durante um acampamento normal, em que sua seção possa demonstrar aos próprios escoteiros os cuidados com o meio ambiente, em uma praça pública ou até mesmo dentro de um Shopping Center (com as devidas autorizações, claro!) para mostrar que seu grupo escoteiro é nota 10 em matéria de conservação da natureza.</p>
+						<a href="#" class="btn btn-rosa">Saiba mais</a>
+					</div>
+					<div class="clear"></div>
 				</div>
-				<div class="clear"></div>
+				<div class="box-atividade">	
+					<div class="col-lg-6 imgdest no-padding">
+						<div class="imagematividade bgParallax1" data-speed="12" style="background: url(public/img/at4.jpg) no-repeat;">
+						
+						</div>
+					</div>
+					<div class="descricaoatividade col-lg-6">
+						<h2>Jogo da reciclagem</h2>
+						<p>Procedimento: As patrulhas estão em formação, ao sinal de um apito, os monitores correm até o latão e pegam um objeto e o levam até a lixeiras correta, voltam e batem a mão no 2º. elemento, e assim sucessivamente. Vence a patrulha que apresentar os sacos de lixos mais cheios ao final do jogo. Cada objeto colocado incorretamente retira um ponto da patrulha.</p>
+						<a href="#" class="btn btn-rosa">Saiba mais</a>
+					</div>
+					<div class="clear"></div>
+				</div>	
+				<div class="box-atividade">	
+					<div class="col-lg-6 imgdest no-padding">
+						<div class="imagematividade bgParallax1" data-speed="12" style="background: url(public/img/lobos.jpg) no-repeat;">
+						
+						</div>
+					</div>
+					<div class="descricaoatividade col-lg-6">
+						<h2>Teatro Ambiental</h2>
+						<p>Procedimento: Cada patrulha receberá uma história diferente com um problema a ser resolvido e terá tempo suficiente para discutir a melhor maneira de solucioná-lo. Depois, cada uma deverá mostrar sua solução sob a forma de teatro.</p>
+						<a href="#" class="btn btn-rosa">Saiba mais</a>
+					</div>
+					<div class="clear"></div>
+				</div>	
+				<div class="box-atividade">	
+					<div class="col-lg-6 imgdest no-padding">
+						<div class="imagematividade bgParallax1" data-speed="12" style="background: url(public/img/at5.jpg) no-repeat;">
+						
+						</div>
+					</div>
+					<div class="descricaoatividade col-lg-6">
+						<h2>Complete as frases</h2>
+						<p>Cada jovem deve receber um cartão com uma das frases abaixo, seja por sorteio, seja procurando os cartões no chão, etc. Ele deve ler a frase em voz alta e tentar completá-la, falando para a tropa o que pensa a respeito do assunto. Desta forma, o chefe terá a oportunidade tanto de abordar questões técnicas, como a forma mais ambientalmente adequada de se fazer algo, tanto quanto conhecer as emoções envolvidas quando se toca em certos assuntos.</p>
+						<a href="#" class="btn btn-rosa">Saiba mais</a>
+					</div>
+					<div class="clear"></div>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section class="insignias bgParallax1" data-speed="8">
+<section class="downloads" id="downloads">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h2>Insígnia Mundial do Meio Ambiente (IMMA)</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis incidunt aperiam a magni, ea itaque sunt quas at quasi beatae! Vero, reprehenderit natus molestias porro quod explicabo perferendis alias eius.
-					Praesentium, ipsum. Atque odit, ab molestiae eligendi, sapiente, iste fugiat, ad suscipit enim quisquam eaque! Aspernatur optio magni nihil unde molestias eligendi sit commodi, eaque excepturi, asperiores expedita. Magnam, impedit.
-					Placeat beatae delectus saepe harum, reprehenderit. Esse atque ab commodi temporibus quas eligendi pariatur quisquam inventore reprehenderit, iure quaerat magni repudiandae! Cumque iste distinctio quam nisi iusto ipsam facere voluptate.
-					Reiciendis quibusdam ipsum quos, temporibus eos neque maxime sunt error, perferendis, ex dolorum sequi! Distinctio dolor soluta tempora veritatis, non sapiente, dicta impedit ullam deleniti, eius, quidem neque facere eveniet.
-					Est, voluptatibus recusandae culpa optio reiciendis ipsam ea delectus corporis voluptates cupiditate? Quia quaerat, quos dolorem quod placeat mollitia quidem alias, cumque velit aspernatur ipsam, ex numquam ducimus itaque ipsa.
-				</p>
+				<h2>Downloads</h2>
+				<div class="col-lg-4">
+					<div class="boxdownload">
+						<figure>
+							<img src="public/img/pdf.png" alt="" class="imgcenter">
+							<figcaption>Titulo do arquivo</figcaption>
+						</figure>
+						<a href="#" class="btn btn-rosa">Download</a>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="boxdownload">
+						<figure>
+							<img src="public/img/pdf.png" alt="" class="imgcenter">
+							<figcaption>Titulo do arquivo</figcaption>
+						</figure>
+						<a href="#" class="btn btn-rosa">Download</a>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="boxdownload">
+						<figure>
+							<img src="public/img/pdf.png" alt="" class="imgcenter">
+							<figcaption>Titulo do arquivo</figcaption>
+						</figure>
+						<a href="#" class="btn btn-rosa">Download</a>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="boxdownload">
+						<figure>
+							<img src="public/img/pdf.png" alt="" class="imgcenter">
+							<figcaption>Titulo do arquivo</figcaption>
+						</figure>
+						<a href="#" class="btn btn-rosa">Download</a>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="boxdownload">
+						<figure>
+							<img src="public/img/pdf.png" alt="" class="imgcenter">
+							<figcaption>Titulo do arquivo</figcaption>
+						</figure>
+						<a href="#" class="btn btn-rosa">Download</a>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="boxdownload">
+						<figure>
+							<img src="public/img/pdf.png" alt="" class="imgcenter">
+							<figcaption>Titulo do arquivo</figcaption>
+						</figure>
+						<a href="#" class="btn btn-rosa">Download</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
+<section class="sugestao bgParallax1" data-speed="12">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2>Sugestão de atividades</h2>
+				<p>Sugerimos algumas atividades neste programa que você pode realizar em locais públicos, com sua tropa ou alcateia, convidando a comunidade para participar.</p>
+				<p>Assim, podem ser cumpridos os objetivos da IMMA, contribuir para melhorar a consciência ecológica da sua comunidade e ainda divulgar seu grupo escoteiro! Além das atividades que colocamos aqui, você encontra outras atividades em <a href="http://www.redeambientalescoteira.org.br" target="_blank">www.redeambientalescoteira.org.br</a>, mas também pode criar a sua própria atividade!</p>
+				<p>Defina o objetivo da IMMA que ela atende, a faixa etária ideal, materiais, passo-a-passo, questões para avaliação etc. </p>
+				<p>Depois de pronta, mande para nós pelo e-mail sustentabilidade@escoteiros.org.br! </p>
+				<p>Nós formatamos e divulgamos para você!</p>
+			</div>
+		</div>
+	</div>
+</section>
+
 
 <footer>
-	<div class="container">
+	<div class="container" id="contato">
 		<div class="row">
 			<div class="col-lg-12">
+				<div class="col-lg-8">
+					<h2>Contato</h2>
+					<p>Nos ajude a fazer o melhor possível!</p>
+					<p>Envie suas sugestões e tire suas dúvidas pelo e-mail sustentabilidade@escoteiros.org.br</p>
+				</div>
 				
+				<div class="col-lg-4">
+					<h3>ESCOTEIROS DO BRASIL</h3>
+					<p>Rua Coronel Dulcídio, 2107 - Bairro Água Verde</p>
+					<p>CEP 80250-100 - Curitiba - Paraná - Brasil</p>
+					<p>Tel.:(41) 3353-4732 . Fax: (41) 3090-7928</p>
+				</div>
 			</div>
 		</div>
 	</div>
