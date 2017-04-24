@@ -99,7 +99,7 @@ header { background: transparent; position: absolute; top: 0; left: 0; right: 0;
 /***************************************************************************************
   BANNER
 ****************************************************************************************/
-.banner { background: url(../img/banner.jpg) no-repeat; background-color: black; position: relative; width: 100%; z-index: 0; height: 800px; background-size: cover; webkit-clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 80%); clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 80%); }
+.banner { background: url(../img/banner.JPG) no-repeat; background-color: black; position: relative; width: 100%; z-index: 0; height: 800px; background-size: cover; webkit-clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 80%); clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 80%); }
 
 .banner .logo { width: 206px; height: 198px; margin-bottom: 40px; }
 
@@ -167,7 +167,7 @@ header { background: transparent; position: absolute; top: 0; left: 0; right: 0;
 .downloads .boxdownload figcaption { line-height: 24px; font-size: 17px; font-family: "Museo500-Regular-webfont"; margin-bottom: 15px; }
 
 /*************************************************************************************** SUGESTAO */
-.sugestao { background: url(../img/sugestao.jpg) no-repeat; background-color: black; position: relative; width: 100%; z-index: 0; background-size: cover; padding: 85px; }
+.sugestao { background: url(../img/sugestao.JPG) no-repeat; background-color: black; position: relative; width: 100%; z-index: 0; background-size: cover; padding: 85px; }
 
 .sugestao h2 { color: #db5c87; font-family: "Museo700"; }
 
