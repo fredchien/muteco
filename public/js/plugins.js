@@ -73,3 +73,7 @@ if ($comprimento <= 500) {
     $('.imagematividade').removeClass('bgParallax1');
     $('.sugestao').removeClass('bgParallax1');
 }
+
+$('.jarallax').jarallax({
+    speed: 0.2
+});
