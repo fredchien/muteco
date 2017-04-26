@@ -106,7 +106,7 @@ $Rosa: #db5c87;
 body {
  width: 100%;
  margin-top:-2px;
- background: rgb(34, 34, 34);
+ background: #92a6ce;
 }
 
 img{max-width: 100%; height: auto;}
@@ -169,7 +169,7 @@ a{&:hover{text-decoration:none !important;}}
   BUTTONS
   ****************************************************************************************/
 .btn-rosa{
-	background: $Verde;
+	background: $Rosa;
     border: none;
     font-size: 20px;
     font-family: $Museo500;
@@ -179,9 +179,9 @@ a{&:hover{text-decoration:none !important;}}
     -o-transition: 0.5s;
     transition: 0.5s;
     
-    &:hover{background: #3d4734; color: $Branco;}
-	&:focus{background: #3d4734; color: $Branco;}
-	&:active{background: #3d4734; color: $Branco;}
+    &:hover{background: #c92e62; color: $Branco;}
+	&:focus{background: #c92e62; color: $Branco;}
+	&:active{background: #c92e62; color: $Branco;}
 }
 /***************************************************************************************
   HEADER
@@ -199,7 +199,7 @@ header{
 /***************************************************************************************
   MENU
 ****************************************************************************************/
-.navbar-toggle{background: $Verde !important; border: $Verde !important;position: relative;}
+.navbar-toggle{background: $Rosa !important; border: $Rosa !important;position: relative;}
 .icon-bar{background:$Branco !important;}
 .menu-top{
 	background: transparent;
@@ -211,7 +211,7 @@ header{
 	    -moz-transition: 0.5s;
 	    -o-transition: 0.5s;
 	    transition: 0.5s;
-		&:hover{color:$Verde !important;}
+		&:hover{color:$Rosa !important;}
 	}
 	.navbar-nav{
 		position: relative;
@@ -224,7 +224,7 @@ header{
 .m_menu{
 	width: 100%; display: block; position: fixed;top: -300px;  z-index: 999;  transition-duration: 1s;
 	background: $Branco;
-	a{color: $Verde !important;}
+	a{color: $Rosa !important;}
 }
 
 /***************************************************************************************
@@ -265,7 +265,7 @@ header{
 		padding-right: 20px;
 		.counter-item {
 			display: inline-block;
-			background: rgba(65,82,51,0.7);
+			background: rgba(219,92,135,0.7);
 			padding: 10px;
     		border-radius: 10px;
 			.counter-label {
@@ -313,9 +313,9 @@ header{
   ****************************************************************************************/
 .sobre{
 	padding: 85px;
-	h2{color:$Verde;font-family: $Museo700;}
+	h2{color:$Rosa;font-family: $Museo700;}
 	p{color:$Branco;font-size: 17px;}
-	a{color: $Verde; &:hover{text-shadow: 2px 2px #000;}}
+	a{color: $Rosa; }
 }
 /***************************************************************************************
   ATIVIDADE
@@ -333,7 +333,7 @@ header{
 	.descricaoatividade{
 		padding: 85px;
 		height: 470px;
-		h2{color:$Verde;font-family: $Museo700;}
+		h2{color:$Rosa;font-family: $Museo700;}
 		p{color:$Preto;font-size: 17px;}
 	}
 	.box-atividade{
@@ -342,7 +342,7 @@ header{
 				float: right;
 			}
 			.descricaoatividade{
-				background: rgb(34, 34, 34);
+				background: #92a6ce;
 				p{color: $Branco;}
 			}
 		}
@@ -358,7 +358,7 @@ header{
     z-index: 0;
     background-size:cover;
     padding: 85px;
-    h2{color:$Verde;font-family: $Museo700;}
+    h2{color:$Rosa;font-family: $Museo700;}
     p{color:$Preto;font-size: 17px;}
     .boxdownload{
     	text-align: center;
@@ -381,19 +381,19 @@ header{
     z-index: 0;
     background-size:cover;
     padding: 85px;
-    h2{color:$Verde;font-family: $Museo700;}
+    h2{color:$Rosa;font-family: $Museo700;}
     p{color:$Branco;font-size: 17px;}
-    a{color: $Verde; &:hover{text-shadow: 2px 2px #000;}}
+    a{color: $Rosa; &:hover{text-shadow: 2px 2px #000;}}
 }
 /***************************************************************************************
   FOOTER
 ****************************************************************************************/
 footer{
 	padding: 85px;
-	h2{color:$Verde;font-family: $Museo700;}
+	h2{color:$Rosa;font-family: $Museo700;}
 	h3{color:$Branco;font-family: $Museo700;}
     p{color:$Branco;font-size: 17px;}
-    a{color: $Verde; &:hover{text-shadow: 2px 2px #000;}}
+    a{color: $Rosa; &:hover{text-shadow: 2px 2px #000;}}
 }
 /***************************************************************************************
   MOBILE

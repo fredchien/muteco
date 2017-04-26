@@ -21,7 +21,7 @@
 .center { margin: 0 auto; float: none; text-align: center; }
 
 /*************************************************************************************** BASE */
-body { width: 100%; margin-top: -2px; background: #222222; }
+body { width: 100%; margin-top: -2px; background: #92a6ce; }
 
 img { max-width: 100%; height: auto; }
 
@@ -62,13 +62,13 @@ a:hover { text-decoration: none !important; }
 .jarallax { background-size: cover; background-repeat: no-repeat; background-position: 50% 50%; }
 
 /*************************************************************************************** BUTTONS */
-.btn-rosa { background: #495e38; border: none; font-size: 20px; font-family: "Museo500-Regular-webfont"; color: white; -webkit-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; }
+.btn-rosa { background: #db5c87; border: none; font-size: 20px; font-family: "Museo500-Regular-webfont"; color: white; -webkit-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; }
 
-.btn-rosa:hover { background: #3d4734; color: white; }
+.btn-rosa:hover { background: #c92e62; color: white; }
 
-.btn-rosa:focus { background: #3d4734; color: white; }
+.btn-rosa:focus { background: #c92e62; color: white; }
 
-.btn-rosa:active { background: #3d4734; color: white; }
+.btn-rosa:active { background: #c92e62; color: white; }
 
 /*************************************************************************************** HEADER */
 header { background: transparent; position: absolute; top: 0; left: 0; right: 0; transition: background .6s ease-in-out; z-index: 3; }
@@ -76,7 +76,7 @@ header { background: transparent; position: absolute; top: 0; left: 0; right: 0;
 /***************************************************************************************
   MENU
 ****************************************************************************************/
-.navbar-toggle { background: #495e38 !important; border: #495e38 !important; position: relative; }
+.navbar-toggle { background: #db5c87 !important; border: #db5c87 !important; position: relative; }
 
 .icon-bar { background: white !important; }
 
@@ -88,7 +88,7 @@ header { background: transparent; position: absolute; top: 0; left: 0; right: 0;
 
 .menu-top a { color: white !important; font-family: "Museo700" !important; font-size: 17px; text-align: center; -webkit-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; }
 
-.menu-top a:hover { color: #495e38 !important; }
+.menu-top a:hover { color: #db5c87 !important; }
 
 .menu-top .navbar-nav { position: relative; }
 
@@ -96,7 +96,7 @@ header { background: transparent; position: absolute; top: 0; left: 0; right: 0;
 
 .m_menu { width: 100%; display: block; position: fixed; top: -300px; z-index: 999; transition-duration: 1s; background: white; }
 
-.m_menu a { color: #495e38 !important; }
+.m_menu a { color: #db5c87 !important; }
 
 /***************************************************************************************
   BANNER
@@ -115,7 +115,7 @@ header { background: transparent; position: absolute; top: 0; left: 0; right: 0;
 
 .banner .counter { text-align: center; padding-right: 20px; }
 
-.banner .counter .counter-item { display: inline-block; background: rgba(65, 82, 51, 0.7); padding: 10px; border-radius: 10px; }
+.banner .counter .counter-item { display: inline-block; background: rgba(219, 92, 135, 0.7); padding: 10px; border-radius: 10px; }
 
 .banner .counter .counter-item .counter-label { font-size: 13px; font-weight: bold; text-transform: uppercase; color: white; font-family: "Museo700"; }
 
@@ -132,13 +132,11 @@ header { background: transparent; position: absolute; top: 0; left: 0; right: 0;
 /*************************************************************************************** SOBRE */
 .sobre { padding: 85px; }
 
-.sobre h2 { color: #495e38; font-family: "Museo700"; }
+.sobre h2 { color: #db5c87; font-family: "Museo700"; }
 
 .sobre p { color: white; font-size: 17px; }
 
-.sobre a { color: #495e38; }
-
-.sobre a:hover { text-shadow: 2px 2px #000; }
+.sobre a { color: #db5c87; }
 
 /*************************************************************************************** ATIVIDADE */
 .atividades { background: white; }
@@ -147,20 +145,20 @@ header { background: transparent; position: absolute; top: 0; left: 0; right: 0;
 
 .atividades .descricaoatividade { padding: 85px; height: 470px; }
 
-.atividades .descricaoatividade h2 { color: #495e38; font-family: "Museo700"; }
+.atividades .descricaoatividade h2 { color: #db5c87; font-family: "Museo700"; }
 
 .atividades .descricaoatividade p { color: black; font-size: 17px; }
 
 .atividades .box-atividade:nth-child(even) .imgdest { float: right; }
 
-.atividades .box-atividade:nth-child(even) .descricaoatividade { background: #222222; }
+.atividades .box-atividade:nth-child(even) .descricaoatividade { background: #92a6ce; }
 
 .atividades .box-atividade:nth-child(even) .descricaoatividade p { color: white; }
 
 /*************************************************************************************** DOWNLOADS */
 .downloads { position: relative; background: white; width: 100%; z-index: 0; background-size: cover; padding: 85px; }
 
-.downloads h2 { color: #495e38; font-family: "Museo700"; }
+.downloads h2 { color: #db5c87; font-family: "Museo700"; }
 
 .downloads p { color: black; font-size: 17px; }
 
@@ -171,11 +169,11 @@ header { background: transparent; position: absolute; top: 0; left: 0; right: 0;
 /*************************************************************************************** SUGESTAO */
 .sugestao { background: url(../img/sugestao.JPG) no-repeat; background-color: black; position: relative; width: 100%; z-index: 0; background-size: cover; padding: 85px; }
 
-.sugestao h2 { color: #495e38; font-family: "Museo700"; }
+.sugestao h2 { color: #db5c87; font-family: "Museo700"; }
 
 .sugestao p { color: white; font-size: 17px; }
 
-.sugestao a { color: #495e38; }
+.sugestao a { color: #db5c87; }
 
 .sugestao a:hover { text-shadow: 2px 2px #000; }
 
@@ -184,13 +182,13 @@ header { background: transparent; position: absolute; top: 0; left: 0; right: 0;
 ****************************************************************************************/
 footer { padding: 85px; }
 
-footer h2 { color: #495e38; font-family: "Museo700"; }
+footer h2 { color: #db5c87; font-family: "Museo700"; }
 
 footer h3 { color: white; font-family: "Museo700"; }
 
 footer p { color: white; font-size: 17px; }
 
-footer a { color: #495e38; }
+footer a { color: #db5c87; }
 
 footer a:hover { text-shadow: 2px 2px #000; }
 
