@@ -156,7 +156,7 @@ header { background: transparent; position: absolute; top: 0; left: 0; right: 0;
 .atividades .box-atividade:nth-child(even) .descricaoatividade p { color: white; }
 
 /*************************************************************************************** DOWNLOADS */
-.downloads { position: relative; background: white; width: 100%; z-index: 0; background-size: cover; padding: 85px; }
+.downloads { position: relative; background: #92a6ce; width: 100%; z-index: 0; background-size: cover; padding: 85px; }
 
 .downloads h2 { color: #db5c87; font-family: "Museo700"; }
 
